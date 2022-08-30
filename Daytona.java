@@ -14,7 +14,6 @@ public class Daytona {
         //Variables 
         int choice = 0;
         int time = 24;
-        int laps = 313;
 
         while ( choice != 4 ) {
             // Menu
@@ -36,6 +35,19 @@ public class Daytona {
                 System.out.println("\nOh no! The beach is closed. ");
             }
           }  
+
+          //Play Disc Golf
+          if (choice == 2) {
+            int meters = 313;
+            
+            System.out.println("\nWelcome to the park!");
+            System.out.println("There is 313 feet left until the basket.");
+            System.out.println("How far did you throw?");
+            time = scan.nextInt();
+
+
+            
+          }
         }
 
         

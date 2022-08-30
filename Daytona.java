@@ -26,7 +26,16 @@ public class Daytona {
         System.out.println("4. Exit\n");
         choice = scan.nextInt();
 
-            
+        //Drive on the beach
+          if (choice == 1) {
+            System.out.println("\nWhat time did Knightro get to the beach?");
+            time = scan.nextInt();
+            if (time >= 9 && time <= 18 ) {
+                System.out.println("\nEnjoy your drive!");
+            }else{
+                System.out.println("\nOh no! The beach is closed. ");
+            }
+          }  
         }
 
         

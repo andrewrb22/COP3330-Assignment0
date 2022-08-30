@@ -24,7 +24,8 @@ public class Daytona {
         System.out.println("2. Play Disc Golf");
         System.out.println("3. See the race.");
         System.out.println("4. Exit\n");
-        
+        choice = scan.nextInt();
+
             
         }
 

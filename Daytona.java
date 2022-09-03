@@ -76,15 +76,20 @@ public class Daytona {
       if (choice == 3) {
         System.out.println("\nHow many laps are left?");
         int lapsLeft = scan.nextInt();
-        int[] laps = new int[lapsLeft];
+        int[] laps ;
+        laps = new int[lapsLeft];
 
-     Arrays.sort(laps);
- 
+        
         for (int i = 0; i < laps.length; i++) {
           
-          System.out.println("There are " + i + " laps left");
-       
+          laps[i]= i;
+         
         }
+
+        for (int j= laps.length ; j > 0; j--) {
+          System.out.println("there are " + j +" laps left");
+        }
+        
         System.out.println("\nFinished!");
 
       }

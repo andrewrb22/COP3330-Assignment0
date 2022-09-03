@@ -1,11 +1,6 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
-/**
- * Andrew Rodriguez
- * Assignment 0 - Daytona
- * Aug 29, 2022
- * COP3330
- */
 
 public class Daytona {
   public static void main(String[] args) {
@@ -26,7 +21,7 @@ public class Daytona {
       System.out.println("4. Exit\n");
       choice = scan.nextInt();
 
-      // Drive on the beach
+      // 1. rive on the beach
       if (choice == 1) {
         System.out.println("\nWhat time did Knightro get to the beach?");
         time = scan.nextInt();
@@ -37,7 +32,7 @@ public class Daytona {
         }
       }
 
-      // Play Disc Golf
+      // 2. Play Disc Golf
       if (choice == 2) {
 
         int meters = 313;
@@ -75,8 +70,34 @@ public class Daytona {
         }
 
       }
+
+      // 3. See the race
+
+      if (choice == 3) {
+        System.out.println("\nHow many laps are left?");
+        int lapsLeft = scan.nextInt();
+        int[] laps = new int[lapsLeft];
+
+     Arrays.sort(laps);
+ 
+        for (int i = 0; i < laps.length; i++) {
+          
+          System.out.println("There are " + i + " laps left");
+       
+        }
+        System.out.println("\nFinished!");
+
+      }
+
+      // 4. Exit
+
+      if (choice == 4) {
+        System.out.println("\n\tGoodbye!!!");
+      }
+
     }
 
+    scan.close();
   }
 
 }
